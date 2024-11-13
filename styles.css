@@ -18,15 +18,16 @@ font-weight: bold;
   background-color: yellow;
   position: absolute;
   border-radius: 50%;
-  top: -75px;
-  right: -75px;
+  right: -5%;
+  top: -5%;
+
 }
 
 .bee {
-  width: 15%;
-  padding-top: 15%;
+  width: 25%;
+  padding-top: 25%;
   margin: auto;
-  margin-top: 15%;
+  top: 10%;
   position: absolute;
   left: 25%;
   z-index: 2;
