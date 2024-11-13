@@ -1,0 +1,274 @@
+
+
+body {
+  background:linear-gradient(90deg, white, #ccfef7);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: monospace;
+font-size: 220%;
+font-weight: bold;
+  overflow: hidden;
+}
+
+.sun {
+  width: 20%;
+  height: 20%;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 50%;
+  top: -75px;
+  right: -75px;
+}
+
+.bee {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 15%;
+  position: relative;
+  z-index: 2;
+  transition: transform 1s ease-in-out 0ms;
+}
+
+.bee * {
+  position: absolute;
+}
+
+.bee:active {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.bee-body {
+  width: 70%;
+  height: 50%;
+  background: #fcfe92;
+  border: 5px solid black;
+  border-radius: 80% 80% 80% 80%;
+  top: 20%;
+  right: 70%;
+}
+
+.eye {
+  width: 10%;
+  height: 15%;
+  background-color: black;
+  top: 30%;
+  border-radius: 100%;
+  right: 10%;
+}
+
+.inner-eye {
+  width: 20%;
+  height: 55%;
+  background-color: white;
+  top: 20%;
+  border-radius: 100%;
+  right: 55%;
+}
+
+.mouth {
+   width: 30px;
+    height: 50px;
+    border: 3px solid #000;
+    border-radius: 0 0 190% 0;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.stripe {
+  width: 10%;
+  height: 98%;
+  background-color: black;
+  border-radius: 25%;
+}
+
+.stripe.front {
+	right: 40%;
+	height: 100%;
+	top: 0;
+}
+
+.stripe.middle {
+	right: 60%;
+	height: 100%;
+	top: 0;
+}
+
+.stripe.back {
+	right: 80%;
+	height: 74%;
+	top: 13%;
+}
+ 
+.arm {
+  width: 25%;
+  height: 60%;
+  background: linear-gradient(
+    90deg,
+    white,
+    rgb(209, 210, 199)
+  );
+  border-radius: 120% 120% 120% 120%;
+  z-index: -1;
+}
+
+.arm.left {
+  top: 15%;
+  left: 40%;
+  transform-origin: top left; 
+  transform: rotate(150deg) scaleX(-1);
+  animation: 3s linear infinite wave1;
+}
+
+.arm.right {
+  top: 15%;
+  right: 40%;
+  transform-origin: top right; 
+  transform: rotate(210deg) scaleX(-1);
+  animation: 3s linear infinite wave2;
+}
+
+@keyframes wave1 {
+  10% {
+    transform: rotate(130deg) scaleX(-1);
+  }
+  20% {
+    transform: rotate(150deg) scaleX(-1);
+  }
+  30% {
+    transform: rotate(130deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(150deg) scaleX(-1);
+  }
+}
+
+@keyframes wave2 {
+  10% {
+    transform: rotate(230deg) scaleX(-1);
+  }
+  20% {
+    transform: rotate(210deg) scaleX(-1);
+  }
+  30% {
+    transform: rotate(230deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(210deg) scaleX(-1);
+  }
+}
+
+.foot {
+  width:  5%;
+  height: 30%;
+  background-color: black;
+  top: 85%;
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
+}
+
+.foot.front {
+transform: rotate(25deg);
+}
+
+.foot.back {
+transform: rotate(-25deg);
+}
+
+.stinger {
+  width:  5%;
+  height: 30%;
+  background-color: black;
+  top: 40%;
+  border-radius: 50%;
+  z-index: -1;
+  left: -2%;
+  transform: rotate(90deg);
+}
+
+
+.flower {
+  background-color: #f707ff;
+  border: 10px solid #fb91ff;
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: -40%;
+  left: 50%;
+  transition: transform 1s ease-in-out 0ms;
+}
+
+.flower:active {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.flower * {
+  position: absolute;
+}
+
+.flowerdot {
+  width: 20px;
+  height: 20px;
+  background-color: #fb91ff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.dot1 { 
+  top: 19%;
+  left: 25%;
+}
+
+.dot2 { 
+  top: 29%;
+  left: 57%;
+}
+
+.dot3 { 
+  top: 53%;
+  left: 85%;
+}
+
+.dot4 { 
+  top: 62%;
+  left: 25%;
+}
+
+.dot5 { 
+  top: 80%;
+  left: 59%;
+}
+
+.stem {
+  width: 20px;
+  height: 150%;
+  background-color: #05a500;
+  border-radius: 25%;
+  position: absolute;
+  top: 95%;
+  left: 45%;
+  z-index: -1;
+}
+
+
+.ground {
+  width: 100vw;
+  height: 50vh;
+  background: #7adb00;
+  position: fixed;
+  bottom: 0;
+}
+
+.text {
+ margin: 10%;
+}
