@@ -199,11 +199,11 @@ transform: rotate(-25deg);
   border: 10px solid #fb91ff;
   width: 15%;
   padding-top: 15%;
-  position: absolute;
+  position: relative;
   border-radius: 50%;
   margin: auto;
   margin-top: -20%;
-  left: 50%;
+  left: 25%;
 }
 
 
