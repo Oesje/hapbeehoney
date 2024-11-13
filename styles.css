@@ -1,7 +1,7 @@
 
 
 body {
-  background:linear-gradient(90deg, white, #ccfef7);
+  background:linear-gradient(90deg, white, #ccf7f7);
   margin: 0;
   padding: 0;
   width: 100%;
@@ -197,20 +197,16 @@ transform: rotate(-25deg);
 .flower {
   background-color: #f707ff;
   border: 10px solid #fb91ff;
-  width: 25%;
-  height: 25%;
+  width: 15%;
+  padding-top: 15%;
   position: absolute;
   border-radius: 50%;
   margin: auto;
-  margin-top: -40%;
+  margin-top: -20%;
   left: 50%;
-  transition: transform 1s ease-in-out 0ms;
 }
 
-.flower:active {
-  transform: scale(1.5);
-  cursor: pointer;
-}
+
 
 .flower * {
   position: absolute;
