@@ -21,6 +21,7 @@ font-weight: bold;
   right: -5%;
   top: -5%;
   z-index: 2;
+	transition: transform 1s ease-in-out 0ms;
 }
 
 .bee {
@@ -39,6 +40,16 @@ font-weight: bold;
 }
 
 .bee:active {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.sun:active {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.flower:active {
   transform: scale(1.5);
   cursor: pointer;
 }
@@ -206,6 +217,7 @@ transform: rotate(-25deg);
   margin: auto;
   margin-top: -20%;
   left: 25%;
+	transition: transform 1s ease-in-out 0ms;
 }
 
 
